@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: db            # 追加
+  host: db          # 追加
   username: postgres  # 追加
   password: <%= ENV["POSTGRES_PASSWORD"] %>  # 追加
   # For details on connection pooling, see Rails configuration guide
@@ -86,3 +86,4 @@ production:
   database: app_production
   username: app
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  

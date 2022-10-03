@@ -7,7 +7,8 @@ ARG DEV_PACKAGES="build-base curl-dev"
 # 環境変数を定義　Dockerfile、コンテナ参照可
 ENV HOME=/${WORKDIR} \
     LANG=C.UTF-8 \
-    TZ=Asia/Tokyo
+    TZ=Asia/Tokyo \
+    POSTGRES_PASSWORD="password"
 
 # Dockerfile内で指定した命令を実行する
 # ${HOME} == /app
